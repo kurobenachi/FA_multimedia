@@ -1,0 +1,296 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Times New Roman", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #f6f6f6; 
+}
+
+header {
+  text-align: right;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ccc; 
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f6f6f6; 
+}
+
+.left-sidebar {
+  width: 7%;
+  background-color: #f6f6f6;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+
+}
+
+.container-sidebar {
+  width: 20%;
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+  position: sticky;  
+  top: 1rem; 
+  align-self: flex-start;
+  border-left: 1px solid #ccc;
+  padding-left: 1rem;
+}
+
+nav.sidebar h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+nav.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+nav.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+nav.sidebar a {
+display: inline-block; 
+text-decoration: none; 
+padding: 0.5rem 0.7rem; 
+margin: 0; 
+line-height: 1; 
+white-space: nowrap;
+overflow: hidden; 
+text-overflow: ellipsis;
+max-width: 100%; 
+box-sizing: border-box; 
+color: #777;
+transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav.sidebar a:hover {
+background-color: #eaeaea; 
+color: #333; 
+font-weight: bold; 
+padding: 0.5rem 0.7rem; 
+line-height: 1; 
+border-radius: 4px; 
+}
+
+nav.sidebar a.active {
+background-color: #eaeaea; 
+color: #333;
+font-weight: bold; 
+padding: 0.5rem 0.7rem;
+line-height: 1; 
+border-radius: 4px; 
+}
+
+
+  figure {
+    display: flex; /* フレックスボックスを使う */
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: center; /* 水平方向に中央揃え */
+    justify-content: center; /* 垂直方向に中央揃え（必要なら） */
+    width: 25rem; /* 幅を固定 */
+    margin: 2rem auto; /* 上下に余白を追加し中央寄せ */
+    text-align: center; /* キャプションの中央揃え */
+  }
+
+  figure img {
+    max-width: 100%; /* 画像の幅をコンテナに合わせる */
+    height: auto; /* アスペクト比を保持 */
+  }
+
+  figure figcaption {
+    margin-top: 0.5rem; /* キャプションとの間に余白 */
+    font-size: 0.9rem; /* キャプションのフォントサイズ */
+    text-align: center;
+    color: #555; /* キャプションの色 */
+  }
+
+
+  .main-letter {
+    margin: 0 auto; /* 全体を中央揃え */
+    padding: 0 2rem; /* 必要に応じて内側の余白を追加 */
+  }
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-size: 30px;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 25px;
+}
+
+p {
+  text-indent: 2em;
+  margin-bottom: 1rem;
+  line-height: 2;
+  font-size: 18px;
+  text-align: justify; 
+}
+
+p.caption {
+  margin-top: 0.5rem; /* キャプションとの間に余白 */
+  font-size: 0.9rem; /* キャプションのフォントサイズ */
+  text-align: center;
+  color: #555; /* キャプションの色 */
+}
+
+ul.references-list {
+  list-style: none; 
+  padding-left: 0;
+  margin-left: 2rem; 
+}
+
+ul.references-list li {
+  text-indent: -2rem; 
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+.figure-pair {
+    display: flex; /* フレックスボックスで並べる */
+    align-items: flex-start; /* 上端を揃える */
+    gap: 1rem; /* 子要素間の余白 */
+    margin: 2rem 0; /* 上下の余白 */
+}
+
+.figure-left {
+  width: 100%; /* 各画像の幅を50%未満に調整 */
+}
+
+#images-link00{
+  margin-right: 3rem; 
+}
+
+.figure-right {
+  width: 100%; /* 各画像の幅を50%未満に調整 */
+}
+
+.image-pair {
+  display: flex; /* フレックスボックスで並べる */
+  justify-content: space-around; /* 子要素を均等に配置 */
+  align-items: flex-start; /* 上端を揃える */
+  gap: 1rem; /* 子要素間の余白 */
+  margin: 2rem 0; /* 上下の余白 */
+}
+
+/* 各画像とキャプションのラッパー */
+.image-item {
+  width: 48%; /* 各画像の幅を50%未満に調整 */
+}
+
+.image-item img {
+  width: 100%; /* 画像の幅を親要素に合わせる */
+  height: auto; /* アスペクト比を維持 */
+}
+
+.image-item .caption {
+  margin-top: 0.5rem; /* キャプションとの間に余白 */
+  font-size: 0.9rem; /* キャプションのフォントサイズ */
+  text-align: center;
+  color: #555; /* キャプションの色 */
+}
+
+  /* Kanbunセクションのコンテナ */
+  .kanbun-section {
+    display: flex; /* フレックスボックスで左右に配置 */
+    gap: 2rem; /* 左右の余白 */
+    margin: 2rem 0; /* 上下の余白 */
+  }
+
+  /* 左側の漢文画像 */
+  .kanbun-left {
+    width: 50%; /* 左側を画面の50%に設定 */
+    text-align: center; /* キャプションを中央揃え */
+  }
+
+  .kanbun-left img {
+    width: 100%; /* 画像を親要素にフィット */
+    height: auto; /* アスペクト比を保持 */
+  }
+
+  .kanbun-left .caption {
+    margin-top: 0.5rem; /* キャプションとの間に余白 */
+    font-size: 0.9rem; /* キャプションのフォントサイズ */
+    text-align: center;
+    color: #555; /* キャプションの色 */
+  }
+
+  /* 右側の朗読オーディオ */
+  .kanbun-right {
+    width: 50%; /* 右側を画面の50%に設定 */
+    display: flex; /* フレックスボックスで縦に配置 */
+    flex-direction: column;
+    gap: 1rem; /* 各音声間の余白 */
+  }
+
+  .audio-container {
+    text-align: center; /* キャプションを中央揃え */
+  }
+
+  .audio-container audio {
+    width: 100%; /* 音声コントロールを親要素にフィット */
+  }
+
+  .audio-container .caption {
+    margin-top: 0.5rem; /* キャプションとの間に余白 */
+    font-size: 0.9rem; /* キャプションのフォントサイズ */
+    color: #555; /* キャプションの色 */
+    text-align: center;
+  }
+
+  /* 統一された figure スタイル */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto; /* 上下の余白と中央揃え */
+  text-align: center;
+  width: auto; /* 自動で幅を調整 */
+}
+
+figure img {
+  max-width: 100%; /* 親要素の幅に合わせる */
+  height: auto; /* アスペクト比を維持 */
+}
+
+figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.figcaption00{
+  margin-right: 3rem; 
+}
+
+/* 以前の p.caption のスタイルを削除 */
+p.caption {
+  display: none;
+}
